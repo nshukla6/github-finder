@@ -411,3 +411,18 @@ table th {
     justify-content: center;
   }
 }
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+@media (max-width:770px){
+  .users {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+  }
+
+}

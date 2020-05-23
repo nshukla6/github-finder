@@ -10,7 +10,7 @@ const Users = () => {
   const githubContext = useContext(GithubContext);
   const {users, loading } = githubContext;
   return (
-    <div style={userStyle}>
+    <div className="users">
         {
           loading ? <Spinner /> :
           users.map((user) => (
@@ -22,12 +22,6 @@ const Users = () => {
         }
       </div>
   )
-}
-
-const userStyle = {
-  display:'grid',
-  gridTemplateColumns: "repeat(3,1fr)",
-  gridGap: "1rem"
 }
 
 export default Users
