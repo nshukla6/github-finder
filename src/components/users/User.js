@@ -31,7 +31,7 @@ const User = ({match}) => {
   },[]);
   return (
     <>
-      <Link to="/" className="btn btn-light">
+      <Link to="/github-finder" className="btn btn-light">
         Back to Search
       </Link>
       Hireable: {" "}
